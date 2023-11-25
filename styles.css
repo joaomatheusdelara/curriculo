@@ -1,0 +1,204 @@
+/* Reset de estilos padrão */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d8d8d8;
+  color: #333;
+  line-height: 1.6;
+}
+/*em baixo das flex box*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*barra lateral*/
+.header-aside {
+  width: 350px;
+  height: 1540px;
+  padding: 25px 25px 100px 25px; 
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+.header-aside header img {
+  border-radius: 100%;
+  max-width: 100%;
+  filter: contrast(110%);
+ 
+}
+.header-aside h1 {
+  margin-top: 10px;
+}
+
+.objetivos {
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  transition: 2s;
+}
+
+
+.objetivos h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.objetivos p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.flex-container {
+  flex: 1; 
+  margin-bottom: 20px;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 100vh;
+  
+}
+.experiencia {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0px 5px 10px -5px #888888;
+  border-radius: 15px;
+  transition: 2s;
+}
+
+.conquistas {
+  background-color: #fff;
+  margin-top: 0px;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 45%;
+  height: 15%;
+  box-shadow: 0px 5px 10px -5px #888888;
+  border-radius: 15px;
+  transition: 2s;
+  }
+
+.habilidades {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px -5px #888888;
+  width: 100%;
+  border-radius: 15px;
+  transition: 2s;
+}
+.interesses{
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  box-shadow: 0px 5px 10px -5px #888888;
+  width: 45%;
+  height: 15%;
+  border-radius: 15px;
+  transition: 2s;
+  display: flex;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px;
+  clear: both;
+  margin-top: auto;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-item {
+    flex: 1;
+  }
+  .header-aside {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .header-aside header img {
+    width: 50%;
+  }
+
+  .flex-container {
+    max-width: 100%;
+  }
+
+.conquistas,.interesses {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .dark-mode #toggle-mode {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+ 
+.dark-mode {
+  background-color: #00000063;
+  color: #fff;
+}
+.dark-mode .objetivos {
+  background-color: #000000; 
+  color: #fff;
+}
+
+.dark-mode .container {
+  background-color: #000000;
+}
+
+.dark-mode .experiencia,.dark-mode .conquistas,.dark-mode .habilidades,.dark-mode .interesses {
+  background-color: #4e4e4ece; 
+  color: #fff; 
+  box-shadow: 0px 2px 5px 2px #a1a1a1; 
+}
+
+#toggle-mode {
+  padding: 10px;
+  background-color:white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+.dark-mode #toggle-mode {
+  background-color: black;
+  color: #fff;
+}
+
+#toggle-mode:hover,
+.dark-mode #toggle-mode:hover {
+  background-color: yellow;
+  color: black; 
+}
